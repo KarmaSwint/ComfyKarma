@@ -13,13 +13,14 @@ class CivitAISampler:
         return {
             "required": {
                 "model": ("MODEL",),
+                "vae": ("VAE",),
                 "positive": ("CONDITIONING", ),
                 "negative": ("CONDITIONING", ),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
                 "latent_image": ("LATENT", ),
                 "sampler_name": (comfy.samplers.KSampler.SAMPLERS, ),
                 "cfg_scale": ("FLOAT", {"default": 7.0, "min": 0.0, "max": 100.0, "step": 0.1}),
-                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
-                "vae": ("VAE",),
+                
             },
             "optional": {
                 "embeddings": ("STRING", {"multiline": True}),
