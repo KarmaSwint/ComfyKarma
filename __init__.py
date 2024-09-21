@@ -1,0 +1,12 @@
+from .civitai_sampler import NODE_CLASS_MAPPINGS as CIVITAI_SAMPLER_NODE_CLASS_MAPPINGS
+from .civitai_sampler import NODE_DISPLAY_NAME_MAPPINGS as CIVITAI_SAMPLER_NODE_DISPLAY_NAME_MAPPINGS
+
+NODE_CLASS_MAPPINGS = {
+    **CIVITAI_SAMPLER_NODE_CLASS_MAPPINGS,
+    # ... other node mappings ...
+}
+
+NODE_DISPLAY_NAME_MAPPINGS = {
+    **CIVITAI_SAMPLER_NODE_DISPLAY_NAME_MAPPINGS,
+    # ... other display name mappings ...
+}
